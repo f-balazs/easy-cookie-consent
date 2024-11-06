@@ -1,0 +1,8 @@
+{
+  "extension": ["ts"],
+  "spec": "./**/*.spec.ts",
+  "require": "ts-node/register",
+  "node-option": [
+    "import=tsx/esm"
+  ]
+}
