@@ -1,6 +1,6 @@
 {
   "name": "easy-cookie-consent",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "types": "./lib/cjs/types/index.d.ts",
   "main": "./lib/cjs/index.js",
@@ -11,7 +11,8 @@
     "build:esm": "tsc -p ./configs/tsconfig.esm.json && mv lib/esm/index.js lib/esm/index.mjs",
     "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
     "prepack": "npm run build",
-    "test": "mocha"
+    "test": "mocha",
+    "semantic-release": "semantic-release"
   },
   "files": [
     "lib/**/*"
@@ -36,7 +37,18 @@
     "@types/mocha": "^10.0.9",
     "chai": "^5.1.2",
     "mocha": "^10.8.2",
+    "semantic-release": "^24.2.0",
     "ts-node": "^10.9.2",
     "tsx": "^4.19.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/f-balazs/easy-cookie-consent.git"
+  },
+  "release": {
+    "branches": ["main"]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
